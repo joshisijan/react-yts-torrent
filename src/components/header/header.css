@@ -1,0 +1,113 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  position: fixed;
+  z-index: 200;
+}
+
+
+.header input{
+  padding: 8px 40px 8px 10px;
+  margin: 10px 5px;
+  width: 250px;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+.header input:focus, .header input:active, .header input:hover{
+  outline: 4px solid var(--green);
+}
+
+
+.header__menu{
+  color: var(--green);
+  cursor: pointer;
+}
+
+.header__bottom__fixer{
+  height: 60px;
+}
+
+.search__container{
+  position: absolute;
+  background: var(--green);
+  color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80vh;
+  z-index: 199;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.search__container__title{
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 60px;
+  position: relative;
+}
+
+.search__container__title__close{
+  position: fixed;
+  right: 30px;
+  top: 70px;
+  background: var(--grey);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.search__container__title__close:hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.search__container__empty{
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.unsearch__container{
+  display: none;
+}
+
+
+.header__form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__button{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--green);
+  border: none;
+  color: #fff;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+
+.header__button:focus, .header__button:active, .header__button:hover{
+  outline: 4px solid var(--green);
+}
